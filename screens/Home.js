@@ -85,7 +85,7 @@ export default function HomeScreen() {
             <Text
               style={{
                 color: COLORS.green,
-                fontSize: 15,
+                fontSize: 14,
                 fontWeight: "700",
               }}
             >
