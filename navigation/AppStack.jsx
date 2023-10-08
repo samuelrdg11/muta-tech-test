@@ -7,19 +7,35 @@ import CollectionsScreen from "../screens/Collections";
 import WalletScreen from "../screens/Wallet";
 import ProfileScreen from "../screens/Profile";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import COLORS from "../constants/COLORS";
+import METRIC from "../constants/METRICS";
 
 const styles = StyleSheet.create({
   tabBar: {
     position: "absolute",
-    paddingTop: 2,
+    paddingTop: METRIC.min,
     bottom: 0,
-    height: 95,
-    backgroundColor: "#181818",
+    height: 80,
+    backgroundColor: COLORS.bgBottomColor,
     borderTopColor: "transparent",
   },
 });
 
 const BottomTab = createBottomTabNavigator();
+
+function TextBottomNavigation({ children, focused }) {
+  return (
+    <Text
+      style={{
+        fontSize: 11,
+        color: focused ? COLORS.green : COLORS.gray,
+        marginTop: 3,
+      }}
+    >
+      {children}
+    </Text>
+  );
+}
 
 export default function Navigation() {
   return (
@@ -42,17 +58,11 @@ export default function Navigation() {
                   <Icon
                     name="home"
                     size={30}
-                    color={focused ? "#d9f264" : "#8c8c8c"}
+                    color={focused ? COLORS.green : COLORS.gray}
                   />
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      color: focused ? "#d9f264" : "#8c8c8c",
-                      marginTop: 3,
-                    }}
-                  >
+                  <TextBottomNavigation focused={focused}>
                     Inicio
-                  </Text>
+                  </TextBottomNavigation>
                 </>
               );
             },
@@ -68,17 +78,11 @@ export default function Navigation() {
                   <Icon
                     name="wallet"
                     size={30}
-                    color={focused ? "#d9f264" : "#8c8c8c"}
+                    color={focused ? COLORS.green : COLORS.gray}
                   />
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      color: focused ? "#d9f264" : "#8c8c8c",
-                      marginTop: 3,
-                    }}
-                  >
+                  <TextBottomNavigation focused={focused}>
                     Billetera
-                  </Text>
+                  </TextBottomNavigation>
                 </>
               );
             },
@@ -94,17 +98,11 @@ export default function Navigation() {
                   <Icon
                     name="calendar"
                     size={30}
-                    color={focused ? "#d9f264" : "#8c8c8c"}
+                    color={focused ? COLORS.green : COLORS.gray}
                   />
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      color: focused ? "#d9f264" : "#8c8c8c",
-                      marginTop: 3,
-                    }}
-                  >
+                  <TextBottomNavigation focused={focused}>
                     Recolecciones
-                  </Text>
+                  </TextBottomNavigation>
                 </>
               );
             },
@@ -120,17 +118,11 @@ export default function Navigation() {
                   <Icon
                     name="account-outline"
                     size={30}
-                    color={focused ? "#d9f264" : "#8c8c8c"}
+                    color={focused ? COLORS.green : COLORS.gray}
                   />
-                  <Text
-                    style={{
-                      fontSize: 11,
-                      color: focused ? "#d9f264" : "#8c8c8c",
-                      marginTop: 3,
-                    }}
-                  >
+                  <TextBottomNavigation focused={focused}>
                     Perfil
-                  </Text>
+                  </TextBottomNavigation>
                 </>
               );
             },
