@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "muta tech test",
+    "slug": "muta-tech-test",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,9 +9,11 @@
     "splash": {
       "image": "./assets/muta-splash-screen.png",
       "resizeMode": "contain",
-      "backgroundColor": "#FFF"
+      "backgroundColor": "#FFFFFF"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "muta.techtest"
@@ -19,12 +21,17 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFF"
+        "backgroundColor": "#FFFFFF"
       },
       "package": "muta.techtest"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "39f4a941-e7d5-4400-8959-94b1325ede7a"
+      }
     }
   }
 }
