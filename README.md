@@ -36,6 +36,4 @@ These are the steps to follow to get started.
   Now you can open the project on a simulator or phone by scanning the QR code.
 
 
-https://github.com/samuelrdg11/muta-tech-test/assets/99931293/ec400728-fa95-4dd9-b7af-78865d27df8a
-
-![HomeScreen](https://github.com/samuelrdg11/muta-tech-test/assets/99931293/a4570e25-6032-4276-827b-494cb60d774e)
+Visual materials about the technical test can be found at the following link: https://drive.google.com/drive/folders/1OaMP6U24fhMR8oqLZCtk8ldZ1dtOLZUr?usp=drive_link
