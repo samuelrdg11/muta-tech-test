@@ -34,3 +34,8 @@ These are the steps to follow to get started.
   yarn run start
   ```
   Now you can open the project on a simulator or phone by scanning the QR code.
+
+
+https://github.com/samuelrdg11/muta-tech-test/assets/99931293/ec400728-fa95-4dd9-b7af-78865d27df8a
+
+![HomeScreen](https://github.com/samuelrdg11/muta-tech-test/assets/99931293/a4570e25-6032-4276-827b-494cb60d774e)
